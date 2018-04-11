@@ -16,7 +16,7 @@ define ("SERIAL_DEVICE_OPENED", 2);
  * @thanks Jim Wright for OSX cleanup/fixes.
  * @copyright under GPL 2 licence
  */
-class __construct
+class PhpSerial()
 {
     public $_device = null;
     public $_winDevice = null;
@@ -38,7 +38,7 @@ class __construct
      *
      * @return PhpSerial
      */
-    public function PhpSerial()
+    public function __construct()
     {
         setlocale(LC_ALL, "en_US");
 
